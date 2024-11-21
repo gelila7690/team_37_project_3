@@ -116,17 +116,23 @@ def display_schedule_as_html(schedule, year, month):
     print(f"Schedule for {calendar.month_name[month]} {year} saved as HTML.")
 
 # Calculate and display pay report
-# plz add monthly pay report too
 def calculate_pay_report():
     total_weekly = 0
+    total_monthly = 0
+    num_of_weeks = 4
+    
     print("\nWeekly Pay Report")
     print("=" * 20)
     for caregiver in caregivers:
-        gross_pay = caregiver["hours"] * caregiver["pay_rate"]
-        total_weekly += gross_pay
-        print(f"{caregiver['name']}: ${gross_pay:.2f}")
+        gross_pay_weekly = caregiver["hours"] * caregiver["pay_rate"]
+        total_weekly += gross_pay_weekly
+        gross_pay_monthly = gross_pay_weekly * num_of_weeks
+        total_monthly += gross_pay_monthly
+        print(f"{caregiver['name']}: Weekly Pay: ${gross_pay_weekly:.2f}, Monthly Pay: ${gross_pay_monthly:.2f}")
         caregiver["hours"] = 0  # Reset hours for next period
+        
     print(f"\nTotal Weekly Pay: ${total_weekly:.2f}")
+    print(f"Total Monthly Pay: ${total_monthly:.2f}")
 
 # Main program
 if __name__ == "__main__":
@@ -148,3 +154,4 @@ if __name__ == "__main__":
 
     # Calculate and display pay report
     calculate_pay_report()
+
