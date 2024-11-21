@@ -10,7 +10,14 @@ caregivers = [
     {"name": "Jack", "phone": "123-456-7890", "email": "jack@example.com", "pay_rate": PAY_RATE, "hours": 0, "availability": {}},
     {"name": "John", "phone": "987-654-3210", "email": "john@abc.com", "pay_rate": PAY_RATE, "hours": 0, "availability": {}},
     {"name": "Jacob", "phone": "555-555-5555", "email": "jacob@123.com", "pay_rate": PAY_RATE, "hours": 0, "availability": {}},
-    # plz add more caregivers, we need 8
+    {"name": "Jill", "phone": "234-567-8901", "email": "jill@xyz.com", "pay_rate": PAY_RATE, "hours": 0, "availability": {}},
+    {"name": "Jane", "phone": "678-901-2345", "email": "jane@test.com", "pay_rate": PAY_RATE, "hours": 0, "availability": {}},
+    {"name": "James", "phone": "890-123-4567", "email": "james@sample.com", "pay_rate": PAY_RATE, "hours": 0, "availability": {}},
+    {"name": "Judy", "phone": "432-109-8765", "email": "judy@example.org", "pay_rate": PAY_RATE, "hours": 0, "availability": {}},
+    {"name": "Jason", "phone": "321-654-0987", "email": "jason@site.com", "pay_rate": PAY_RATE, "hours": 0, "availability": {}},
+    {"name": "Jordan", "phone": "456-789-0123", "email": "jordan@mail.com", "pay_rate": PAY_RATE, "hours": 0, "availability": {}}
+]
+
 ]
 
 # Create default availability schedule
